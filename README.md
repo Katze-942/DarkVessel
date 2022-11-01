@@ -1,4 +1,9 @@
-### Hi there 👋
+## Hello everyone, my name is Zhora 👋
+
+I am studying Node programming.js with TypeScript. I am mainly engaged in Telegram and Discord bots, but recently I began to study web development. Unfortunately, I am still a student and I cannot devote all my free time to my occupation and I have no projects that I would like to show off. However, when they appear, I will definitely write them here!
+
+### Studied technologies
+I know all the basics of JavaScript (not browser-based) and write on the Node platform.js since about 2020. Around the beginning of the year, I started using the TypeScript compiler along with ESLint.
 
 <!--
 **DarkVessel/DarkVessel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
