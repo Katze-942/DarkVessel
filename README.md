@@ -21,7 +21,7 @@ I am in various messengers and social networks. The main ones are:
 - GMail: rs5334819@gmail.com
 
 ### Additionally
-I am also on GitLab! For any questions, you can write to me in private messages, I don't bite. In my free time, I will finish all my projects.
+I am also on [GitLab](https://gitlab.com/DarkVessel/) and [YouTube](https://www.youtube.com/channel/UChoAy5_itTHfsngdbRFhRvw)! For any questions, you can write to me in private messages, I don't bite. In my free time, I will finish all my projects.
 
 Good morning, evening or night to you.
 
