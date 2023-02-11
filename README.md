@@ -19,7 +19,7 @@ I communicate in different messenger and social networks. Here are the main ones
  - Telegram: https://t.me/katze_942
  - Mastodon (blog, rarely writing something): https://social.linux.pizza/@katze
  - Discord: `Агент-Жорра 942#2008` (ID: `517331770656686080`)
- - Matrix: `@katze-942:matrix.org`
+ - Matrix: https://matrix.to/#/@katze-942:matrix.org
  - Mail: rs5334819@gmail.com
 
 ### I have something else to say
