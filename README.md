@@ -23,7 +23,7 @@ I communicate in different messenger and social networks. Here are the main ones
  - Mail: rs5334819@gmail.com
 
 ### I have something else to say
-I also eat on [GitLab](https://gitlab.com/DarkVessel/) and [YouTube](https://www.youtube.com/channel/UChoAy5_itTHfsngdbRFhR)! For any questions you can write to me in personal messages, I think that's all, I have nothing special to write. Good evening, morning or night to you.
+I also eat on [GitLab](https://gitlab.com/Katze_942/) and [YouTube](https://www.youtube.com/channel/UChoAy5_itTHfsngdbRFhR)! For any questions you can write to me in personal messages, I think that's all, I have nothing special to write. Good evening, morning or night to you.
 
 <!--
 **DarkVessel/DarkVessel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
