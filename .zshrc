@@ -58,7 +58,7 @@ fi
 function scriptZshrcCheckTheme {
   if ! [ -d "$ZSH_CUSTOM/$1" ]; then
     echo "Install $1..."
-    git clone $2 $ZSH_CUSTOM/$1
+    git clone $2 $ZSH_CUSTOM/$1 --depth=1
     echo "\n"
   fi
 }
@@ -152,7 +152,7 @@ COMPLETION_WAITING_DOTS="%F{yellow}[Wait! I'm looking... :0]%f"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  #                            --- Support for various commands ---
+  # --- Support for various commands ---
   git                          #                                                                     -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
   gh                           # GitHub CLI                                                          -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gh
   fd                           # fs-find                                                             -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fd
@@ -174,7 +174,7 @@ plugins=(
 # suse                         # Support for the "zypper" package manager                            -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/suse
 # yum                          # Support for the "yum" package manager                               -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yum
 
-  #                            --- Adding third-party commands ---
+  # --- Adding third-party commands ---
   aliases                      # Command acs - show all aliases by group                             -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases
   catimg                       # Command catimg - displays a picture                                 -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/catimg
   colorize                     # Colors the output of the cat command                                -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize
@@ -187,7 +187,7 @@ plugins=(
   jsontools                    # Various json utilities                                              -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/jsontools
   web-search                   # Commands for web search. Example: "yandex", "google"                -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
 
-  #                            --- Keyboard combinations ---
+  # --- Keyboard combinations ---
   dirhistory                   # Keys for navigating directories (on Alt)                            -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dirhistory
   copybuffer                   # Ctrl + O copies the current command                                 -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer
 # sudo                         # Double-clicking on ESC adds "sudo" to the command                   -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
@@ -195,7 +195,7 @@ plugins=(
   zsh-autosuggestions          # A simple autofill tool by clicking on the right arrow               -> https://github.com/zsh-users/zsh-autosuggestions
   zsh-history-substring-search # By clicking on the up/down arrows, changes the auto-completion      -> https://github.com/zsh-users/zsh-history-substring-search
 
-  #                            --- Other improvements ---
+  # --- Other improvements ---
   colored-man-pages            # Colors man pages                                                    -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
   command-not-found            # If the command does not exist, it will search the repositories      -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
   safe-paste                   # Protection against command execution after insertion                -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/safe-paste
@@ -217,7 +217,7 @@ bindkey '^[[B' history-substring-search-down
 
 if command -v fuck &> /dev/null; then
   eval $(thefuck --alias)
-if
+fi
 
 # User configuration
 
