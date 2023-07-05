@@ -13,6 +13,9 @@
 # Enjoy your use!
 #
 
+# shellcheck disable=SC2034
+# shellcheck disable=SC1091
+
 
 # Storing path information for oh-my-zsh.
 ZSH=$HOME/.oh-my-zsh
@@ -20,14 +23,14 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
 
 # Check if oh-my-zsh is installed.
 # Check if the folder .oh-my-zsh exists.
-if ! [ -d $ZSH ]; then
+if ! [ -d "$ZSH" ]; then
   echo 'INSTALLING oh-my-zsh...'
   # Repeat the message 5 times, it is necessary that the user noticed.
   for (( i=1; i <= 5; i++ )); do
     echo 'WARNING: The installation of oh-my-zsh will now start. When the installation is finished, please type "exit" or press Ctrl + D to continue the installation process.'
   done
 
-  echo "\n";
+  echo
 
   # Check for the sh command.
   if ! command -v sh &> /dev/null; then
@@ -36,7 +39,7 @@ if ! [ -d $ZSH ]; then
   fi
 
   # oh-my-zsh will overwrite our configuration file, so back it up.
-  cp $HOME/.zshrc $HOME/.zshrc.new
+  cp "$HOME/.zshrc" "$HOME/.zshrc.new"
 
   # Install oh-my-zsh in one of the following ways.
   if command -v curl &> /dev/null; then
@@ -49,17 +52,19 @@ if ! [ -d $ZSH ]; then
   fi
 
   # After installing oh-my-zsh, return our config and continue the installation.
-  cp $HOME/.zshrc.new $HOME/.zshrc
-  rm $HOME/.zshrc.new
-  echo '\nContinuing the installation...\n'
+  cp "$HOME/.zshrc.new" "$HOME/.zshrc"
+  rm "$HOME/.zshrc.new"
+  echo
+  echo 'Continuing the installation...'
+  echo
 fi
 
 # Installing all plugins and themes...
 function scriptZshrcCheckTheme {
   if ! [ -d "$ZSH_CUSTOM/$1" ]; then
     echo "Install $1..."
-    git clone $2 $ZSH_CUSTOM/$1 --depth=1
-    echo "\n"
+    git clone "$2 $ZSH_CUSTOM/$1 --depth=1"
+    echo
   fi
 }
 
@@ -74,8 +79,10 @@ uptime
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+
+# shellcheck source=/dev/null
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${%:-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${%:-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
@@ -88,7 +95,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -206,7 +212,7 @@ plugins=(
 # nvm                          # Automatically installs and configures nvm (Node Version Manager)    -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm
 )
 
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 # Use the "ccat" command from the "colorize" plugin
 alias cat=ccat
@@ -216,7 +222,7 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 if command -v fuck &> /dev/null; then
-  eval $(thefuck --alias)
+  eval "thefuck --alias"
 fi
 
 # User configuration
@@ -246,4 +252,5 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# shellcheck source=/dev/null
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
