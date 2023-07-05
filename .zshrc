@@ -71,6 +71,7 @@ function scriptZshrcCheckTheme {
 scriptZshrcCheckTheme plugins/zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
 scriptZshrcCheckTheme plugins/zsh-history-substring-search https://github.com/zsh-users/zsh-history-substring-search
 scriptZshrcCheckTheme plugins/zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting
+scriptZshrcCheckTheme plugins/wakatime https://github.com/sobolevn/wakatime-zsh-plugin.git
 scriptZshrcCheckTheme themes/powerlevel10k/ https://github.com/romkatv/powerlevel10k.git
 
 # Just displaying uptime :)
@@ -179,6 +180,7 @@ plugins=(
 # dnf                          # Support for the "dnf" package manager                               -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dnf
 # suse                         # Support for the "zypper" package manager                            -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/suse
 # yum                          # Support for the "yum" package manager                               -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yum
+# brew                         # Support for the "brew"package manager                               -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/brew
 
   # --- Adding third-party commands ---
   aliases                      # Command acs - show all aliases by group                             -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases
@@ -196,8 +198,8 @@ plugins=(
   # --- Keyboard combinations ---
   dirhistory                   # Keys for navigating directories (on Alt)                            -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dirhistory
   copybuffer                   # Ctrl + O copies the current command                                 -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer
-# sudo                         # Double-clicking on ESC adds "sudo" to the command                   -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
-  thefuck                      # Double-clicking on the ESC invokes the "fuck" command               -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck
+  sudo                         # Double-clicking on ESC adds "sudo" to the command                   -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
+# thefuck                      # Double-clicking on the ESC invokes the "fuck" command               -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck
   zsh-autosuggestions          # A simple autofill tool by clicking on the right arrow               -> https://github.com/zsh-users/zsh-autosuggestions
   zsh-history-substring-search # By clicking on the up/down arrows, changes the auto-completion      -> https://github.com/zsh-users/zsh-history-substring-search
 
@@ -207,7 +209,7 @@ plugins=(
   safe-paste                   # Protection against command execution after insertion                -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/safe-paste
 # zbell                        # Notifies you that the command has been executed                     -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/zbell
   zsh-syntax-highlighting      # Illuminates the team in green                                       -> https://github.com/zsh-users/zsh-syntax-highlighting
-
+  wakatime                     # wakatime.com                                                        -> https://github.com/sobolevn/wakatime-zsh-plugin.git
 # lol                          # Changes the basic to cute analogies :0
 # nvm                          # Automatically installs and configures nvm (Node Version Manager)    -> https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm
 )
