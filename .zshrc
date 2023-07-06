@@ -16,6 +16,10 @@
 # shellcheck disable=SC2034
 # shellcheck disable=SC1091
 
+# With a value of 1 you will use the ccat command instead of cat
+# You must download "chroma" or "pygments" to work
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize
+COLORED_CAT=0
 
 # Storing path information for oh-my-zsh.
 ZSH=$HOME/.oh-my-zsh
@@ -217,15 +221,20 @@ plugins=(
 source "$ZSH/oh-my-zsh.sh"
 
 # Use the "ccat" command from the "colorize" plugin
-alias cat=ccat
+if [ "$COLORED_CAT" -eq 1 ]; then
+  alias cat=ccat
+fi
+
 
 # For the "zsh-history-substring-search" plugin to work
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-if command -v fuck &> /dev/null; then
-  eval "thefuck --alias"
-fi
+# Comment if you need thefuck support
+
+# if command -v fuck &> /dev/null; then
+#   eval "thefuck --alias"
+# fi
 
 # User configuration
 
