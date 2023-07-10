@@ -30,7 +30,7 @@
 
 - Telegram: <https://t.me/katze_942>
 - Mastodon (мой тупой блог): <https://lor.sh/@Katze_942>
-- Discord: `Агент-Жорра 942#2008` (ID: `517331770656686080`)
+- Discord: `@katze_942` (ID: `517331770656686080`)
 - Matrix: <https://matrix.to/#/@katze-942:matrix.org>
 - Почта: <rs5334819@gmail.com>
 
