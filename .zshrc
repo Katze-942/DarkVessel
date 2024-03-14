@@ -67,7 +67,7 @@ fi
 function scriptZshrcCheckTheme {
   if ! [ -d "$ZSH_CUSTOM/$1" ]; then
     echo "Install $1..."
-    git clone "$2 $ZSH_CUSTOM/$1 --depth=1"
+    git clone "$2" "$ZSH_CUSTOM/$1" --depth=1
     echo
   fi
 }
